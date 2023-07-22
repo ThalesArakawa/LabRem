@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Updates</title>
+    <script>
+        const socket = new WebSocket('ws://localhost:8080');
+
+        socket.addEventListener('open', () => {
+            console.log('WebSocket connection established.');
+        });
+
+        socket.addEventListener('message', (event) => {
+            const number = parseInt(event.data);
+            // Update the HTML element with the new number
+            console.log(number);
+            document.getElementById('number').innerText = number;
+        });
+
+        function updateNumber() {
+            const newNumber = parseInt(document.getElementById('inputNumber').value);
+            socket.send(newNumber);
+        }
+    </script>
+</head>
+<body>
+    <h1>Number Updates</h1>
+    <p>Current Number: <span id="number">0</span></p>
+    <input type="number" id="inputNumber" placeholder="Enter a number">
+    <button onclick="updateNumber()">Update</button>
+</body>
+</html>

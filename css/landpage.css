@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Biryani:wght@300;400&family=Martel+Sans:wght@800&display=swap');
+/* font-family: 'Biryani', sans-serif;
+font-family: 'Martel Sans', sans-serif;
+font-family: 'Archivo Black', sans-serif; */
+@font-face {
+    font-family: DANUB;
+    src: url('../fonts/DANUBE.TTF') format('truetype');
+}
+@font-face {
+font-family: LemonMilk;
+    src: url('../fonts/LEMONMILK-Regular.otf') format('opentype');
+}
+  
+/*RESETANDO PADRÕES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*-----------------*/
+body {
+    background: url('../img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    border-top: 0.4px solid;
+    height: 88vh;
+    width: 100vw;
+}
+
+.mainContent {
+    display: block;
+    height: 54vh;
+    width: 54.5vw;
+    margin-top: 15vh;
+    background-color: rgba(0, 0,0, 0.69);
+}
+
+.mainContentWords {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.logoMainPage {
+    height: 13vh;
+    margin-top: 4vh;
+}
+
+.mainContent-title {
+    font-family: DANUB, sans-serif;
+    background: linear-gradient(to right, #24bef5, #dff3cf); /* Set the gradient background */
+    background-clip: text; /* Apply the background only to the text */
+    -webkit-text-fill-color: transparent; /* Set the text color to transparent to make it see-through */
+    text-decoration: underline #b7fff5 1.4vh; /* Add an underline decoration to the text */
+    -webkit-background-clip: text;
+    font-weight: 400;
+    font-size: 17vh;
+    text-align: center;
+    margin-top: -2.7vh;
+}
+
+.mainContent-subTitle {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 100;
+    font-size: 4.5vh;
+    letter-spacing: 0.39em;
+    text-align: center;
+    color: #e84532;
+    margin-top: -5vh;
+    padding-left: 1vh;
+}
+
+.mainContentButton {
+    border-radius: 20px;
+    font-family: LemonMilk, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #f2f0f1;
+    padding: 0.3vh;
+    margin-top: 3vh;
+}
+
+
+.footer {
+    padding-left: 15vw;
+    background-color: rgba(0, 0,0, 0.8);
+    border-top: 1px solid #000;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.infoFooter {
+    padding-top: 1.5vh;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.infoFooter-social {
+    display: flex;
+    flex-direction: row;
+    margin-left: -0.2vh;
+    gap: 1vh;
+}
+
+.infoFooter-creator {
+    font-family: LemonMilk, sans-serif;
+    font-weight: 400;
+    font-size: 1.2vh;
+    color: #24bef5;
+}
+
+.infoFooter-socialImg {
+    height: 3vh;
+}
+
+.infoFooter-partner {
+    padding-top: 1.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.infoFooter-partnerImg {
+    height: 8vh;
+}

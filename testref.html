@@ -1,0 +1,40 @@
+<html>
+<body>
+    Número <output id="number"></output>
+
+    <script>
+        var eventSource = new EventSource("api/webSocketF1ref.php");
+
+          /*eventSource.onmessage = function(event) {
+              const number = event.data;
+              // Handle the received number, e.g., update the HTML content
+              document.getElementById('number').innerText = number;
+              console.log('Received number:', number);
+          };*/
+          eventSource.onmessage = function(event) {
+            // Append the message to the ordered list
+            console.log('evnto');
+            document.getElementById('number').innerText = event.data;
+            };
+          /*eventSource.addEventListener('number', e => {
+            console.log(e);
+            document.getElementById('number').innerText = e.data;
+          });*/
+
+
+          eventSource.onerror = function(event) {
+              console.log('SSE connection error');
+          };
+
+          eventSource.onclose = function(event) {
+              console.log('SSE connection closed');
+          };
+
+          eventSource.onopen = function(event) {
+              console.log('SSE connection open');
+          };
+
+
+    </script>
+</body>
+</html>

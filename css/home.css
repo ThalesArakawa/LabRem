@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Biryani:wght@300;400&family=Martel+Sans:wght@800&display=swap');
+/* font-family: 'Biryani', sans-serif;
+font-family: 'Martel Sans', sans-serif;
+font-family: 'Archivo Black', sans-serif; */
+@font-face {
+    font-family: DANUB;
+    src: url('../fonts/DANUBE.TTF') format('truetype');
+}
+@font-face {
+font-family: LemonMilk;
+    src: url('../fonts/LEMONMILK-Regular.otf') format('opentype');
+}
+  
+/*RESETANDO PADRÕES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*-----------------*/
+body {
+    background: url('../img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+
+    height: 14.8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0,0, 0.69);
+}
+
+.mainMenu {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.mainMenuOption{
+    font-family: LemonMilk, sans-serif;
+    font-size: 2vh;
+    color: #7ee8da;
+}
+.mainMenuOption:hover{
+    text-decoration: underline;
+}
+
+.logoHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.7vw;
+}
+
+.logoHeaderIcon {
+    height: 10vh ;
+}
+
+.content {
+    border-top: 0.4px solid;
+    height: 73.2vh;
+    width: 100vw;
+    background-color: rgba(0, 0,0, 0.37);
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 45.2vw;
+    
+}
+
+.logoText {
+    padding-top:0.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-title {
+    font-family: DANUB, sans-serif;
+    background: linear-gradient(to right, #24bef5, #dff3cf); /* Set the gradient background */
+    background-clip: text; /* Apply the background only to the text */
+    -webkit-text-fill-color: transparent; /* Set the text color to transparent to make it see-through */
+    text-decoration: underline #b7fff5 0.4vh; /* Add an underline decoration to the text */
+    -webkit-background-clip: text;
+    font-weight: 400;
+    font-size: 5vh;
+    text-align: center;
+}
+
+.logo-subTitle {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 100;
+    font-size: 1.5vh;
+    letter-spacing: 0.25em;
+    text-align: center;
+    color: #e84532;
+    margin-top: -1.5vh;
+    padding-left: 0.5vh;
+}
+
+.secondaryContentWords {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondaryContentTitle {
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 100;
+    font-size: 3vh;
+    text-align: center;
+    color: #fff;
+}
+
+.secondaryContentP {
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 100;
+    font-size: 1.5vh;
+    text-align: center;
+    color: #fff;
+}
+
+.footer {
+    padding-left: 15vw;
+    background-color: rgba(0, 0,0, 0.8);
+    border-top: 1px solid #000;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.infoFooter {
+    padding-top: 1.5vh;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.infoFooter-social {
+    display: flex;
+    flex-direction: row;
+    margin-left: -0.2vh;
+    gap: 1vh;
+}
+
+.infoFooter-creator {
+    font-family: LemonMilk, sans-serif;
+    font-weight: 400;
+    font-size: 1.2vh;
+    color: #24bef5;
+}
+
+.infoFooter-socialImg {
+    height: 3vh;
+}
+
+.infoFooter-partner {
+    padding-top: 1.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.infoFooter-partnerImg {
+    height: 8vh;
+}

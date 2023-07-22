@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Biryani:wght@300;400&family=Martel+Sans:wght@800&display=swap');
+/* font-family: 'Biryani', sans-serif;
+font-family: 'Martel Sans', sans-serif;
+font-family: 'Archivo Black', sans-serif; */
+@font-face {
+    font-family: DANUB;
+    src: url('../fonts/DANUBE.TTF') format('truetype');
+}
+@font-face {
+font-family: LemonMilk;
+    src: url('../fonts/LEMONMILK-Regular.otf') format('opentype');
+}
+  
+/*RESETANDO PADRÕES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*-----------------*/
+body {
+    background: url('../img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+
+    height: 14.8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0,0, 0.69);
+}
+
+.mainMenu {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.mainMenuOption{
+    font-family: LemonMilk, sans-serif;
+    font-size: 2vh;
+    color: #7ee8da;
+}
+.mainMenuOption:hover{
+    text-decoration: underline;
+}
+
+.logoHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.7vw;
+}
+
+.logoHeaderIcon {
+    height: 10vh ;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    border-top: 0.4px solid;
+    height: 73.2vh;
+    width: 100vw;
+    background-color: rgba(0, 0,0, 0.37);
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 45.2vw;
+}
+
+.logoText {
+    padding-top:0.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-title {
+    font-family: DANUB, sans-serif;
+    background: linear-gradient(to right, #24bef5, #dff3cf); /* Set the gradient background */
+    background-clip: text; /* Apply the background only to the text */
+    -webkit-text-fill-color: transparent; /* Set the text color to transparent to make it see-through */
+    text-decoration: underline #b7fff5 0.4vh; /* Add an underline decoration to the text */
+    -webkit-background-clip: text;
+    font-weight: 400;
+    font-size: 5vh;
+    text-align: center;
+}
+
+.logo-subTitle {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 100;
+    font-size: 1.5vh;
+    letter-spacing: 0.25em;
+    text-align: center;
+    color: #e84532;
+    margin-top: -1.5vh;
+    padding-left: 0.5vh;
+}
+
+.mainContentWords {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin-top: 12vh;
+    margin-left: 15vw;
+    font-family: LemonMilk, sans-serif;
+}
+
+.mainContentTitle1 {
+    font-weight: 100;
+    font-size: 6vh;
+    color: #fff;
+}
+.mainContentTitle2 {
+    font-weight: 100;
+    font-size: 4vh;
+    color: #e84532;
+}
+.mainContentTitle3 {
+    font-weight: 100;
+    font-size: 3vh;
+    color: #fff;
+}
+.mainContentTitle4 {
+    font-weight: 100;
+    font-size: 3vh;
+    color: #44d3da;
+}
+.secondaryContentP {
+    font-weight: 100;
+    font-size: 1.5vh;
+    color: #fff;
+}
+
+.labMosaic {
+    margin-top: 9vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.moduleRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.moduleArea{
+    width: 30vh;
+    height: 30vh;
+    position: relative;
+    text-align: center;
+}
+.moduleHover{
+    width: 30vh;
+    height: 30vh;
+    position: relative;
+}
+
+.moduleIcon {
+    display: block;
+    margin: 3vh;
+    width: 24vh;
+    border: 0.5vh;
+    border-style: solid;
+    border-color: #fff;
+    filter: brightness(1);
+    transition: filter 0.4s ease-out, width 0.4s ease-out,margin 0.4s ease-out;
+}
+
+.moduleName {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: LemonMilk,'sans serif';
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.moduleName > .underConstruction {
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.moduleArea:hover > .moduleIcon{
+    margin: 2vh;
+    width: 26vh;
+    filter: brightness(0.35);
+}
+.moduleArea:hover > .moduleName{
+    opacity: 1;
+}
+
+.footer {
+    padding-left: 15vw;
+    background-color: rgba(0, 0,0, 0.8);
+    border-top: 1px solid #000;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.infoFooter {
+    padding-top: 1.5vh;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.infoFooter-social {
+    display: flex;
+    flex-direction: row;
+    margin-left: -0.2vh;
+    gap: 1vh;
+}
+
+.infoFooter-creator {
+    font-family: LemonMilk, sans-serif;
+    font-weight: 400;
+    font-size: 1.2vh;
+    color: #24bef5;
+}
+
+.infoFooter-socialImg {
+    height: 3vh;
+}
+
+.infoFooter-partner {
+    padding-top: 1.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.infoFooter-partnerImg {
+    height: 8vh;
+}
